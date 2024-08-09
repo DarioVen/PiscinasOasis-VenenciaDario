@@ -1,0 +1,69 @@
+
+
+.presentacion {
+  height: 30%;
+  min-height: 150px;
+  max-height: 300px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(../media/Backgrounds/sombrero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  p{
+    display: flex;
+    font-size: 4rem;
+    margin: 0;
+    color: white;
+    @include bebas-neue;
+  }
+}
+
+@media (min-width: 700px){
+  .presentacion p{
+    font-size: 5rem;
+  }
+}
+
+h1, h2, h3, h4 {
+  @include bebas-neue;
+  color: white;
+}
+
+h1, h2 {
+  margin: 0;
+  padding-top: 0.25rem;
+  padding-bottom: 0.05rem;
+  font-size: 2.7rem;
+  animation: bg-text-contrast 10s infinite;
+  @include TextGradient;
+}
+
+@keyframes bg-text-contrast{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color: $colorJet;
+  }
+  100%{
+    background-color: white;
+  }
+}
+
+h3, h4{
+  font-size: 1.5rem;
+  text-shadow: 0 0 7px $colorJet;
+  padding: 0.4rem 0;
+}
+h3{
+  border-top: 0.5rem solid $colorJet;
+  background-image: url(../media/Backgrounds/azulejo.webp);
+  background-size: 110px;
+  margin: 0;
+}

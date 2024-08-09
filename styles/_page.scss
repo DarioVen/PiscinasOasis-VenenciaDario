@@ -1,0 +1,40 @@
+html,
+body {
+  scroll-behavior: smooth;
+  @include nunito;
+
+}
+
+main{
+  min-height: calc(100vh - 100px);
+  background-image: url(../media/Backgrounds/vidrio.webp);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 200px){
+  html{
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 260px){
+  html{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 350px){
+  html{
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 1000px){
+  html{
+    font-size: 20px;
+  }
+}
+

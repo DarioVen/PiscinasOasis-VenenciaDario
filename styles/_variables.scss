@@ -1,0 +1,23 @@
+$colorJet: #353535;
+$colorCaribbeanCurrent: #3c6e71;
+$colorPlatinum: #D9D9D9;
+$colorIndigoDye: #284B63;
+$colorCeleste: #40cfff;
+$colorNaranja: #ff7040;
+$coloramarron:#916e41;
+
+$colors: (
+  "Jet": $colorJet,
+  "CaribbeanCurrent": $colorCaribbeanCurrent,
+  "Platinum": $colorPlatinum,
+  "IndigoDye": $colorIndigoDye,
+  "Celeste": $colorCeleste,
+  "colorNaranja": $colorNaranja,
+);
+
+@each $key, $val in $colors {
+  .bg-#{$key} {
+    background-color: $val;
+  }
+}
+
