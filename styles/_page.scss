@@ -2,11 +2,6 @@ html,
 body {
   scroll-behavior: smooth;
   @include nunito;
-
-}
-
-main{
-  min-height: calc(100vh - 100px);
   background-image: url(../media/Backgrounds/vidrio.webp);
   background-attachment: fixed;
   background-position: center;
