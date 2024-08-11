@@ -6,6 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@500&family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 .bg-Jet {
   background-color: #353535;
 }
@@ -76,7 +77,7 @@ main {
     font-size: 13px;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   html {
     font-size: 20px;
   }
@@ -123,7 +124,7 @@ footer a {
 }
 
 .navbar-toggler:focus {
-  box-shadow: 0 0 0 1px;
+  box-shadow: 0 0 10px 0 white;
 }
 
 .nav-item {
@@ -144,7 +145,7 @@ footer a {
     margin-right: auto;
   }
   .nav-item :hover {
-    transform: translateX(5px);
+    transform: translateX(10px);
   }
 }
 .nav-link {
@@ -222,17 +223,12 @@ footer a {
 
 /* Link-A */
 .link-A {
-  display: flex;
+  display: inline-flex;
   width: auto;
-  margin-left: auto;
   font-size: 0.9rem;
-}
-.link-A i {
-  align-self: center;
-}
-.link-A a {
-  border-radius: 1rem;
-  padding: 0.2rem;
+  border-radius: 0.3rem;
+  margin-bottom: 5px;
+  padding: 5px;
   color: #353535;
   text-decoration: none;
   font-family: "Playwrite AR", cursive;
@@ -240,8 +236,11 @@ footer a {
   font-weight: 400;
   font-style: normal;
 }
-.link-A a:hover {
-  background-color: #ff7040;
+.link-A i {
+  align-self: center;
+}
+.link-A:hover {
+  background: #ff7040;
   color: white;
   transition: 0.2s;
 }
@@ -296,6 +295,9 @@ footer a {
   border-radius: 100%;
   margin: 0 1rem;
 }
+.redes a:hover {
+  animation: animationRedes 0.6s forwards;
+}
 .redes i {
   font-size: 1.5rem;
   color: #353535;
@@ -310,6 +312,21 @@ footer a {
   word-break: break-all;
 }
 
+@keyframes animationRedes {
+  50% {
+    rotate: 360deg;
+  }
+  75% {
+    scale: 1.2;
+    rotate: 360deg;
+  }
+  100% {
+    scale: 1.1;
+    rotate: 360deg;
+    background-color: white;
+    box-shadow: 0 0 20px white;
+  }
+}
 /* carousel */
 .carousel-item {
   height: 230px;
@@ -374,7 +391,7 @@ footer a {
   position: relative;
   z-index: 0;
   border-radius: 20px;
-  max-height: 300px;
+  max-height: 500px;
 }
 .bg-img img {
   object-fit: cover;
@@ -439,30 +456,6 @@ footer a {
     height: 550px;
   }
 }
-.presentacion {
-  height: 30%;
-  min-height: 150px;
-  max-height: 300px;
-  display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  justify-content: center;
-  align-items: center;
-  background-image: url(../media/Backgrounds/sombrero.webp);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-}
-.presentacion p {
-  display: flex;
-  font-size: 4rem;
-  margin: 0;
-  color: white;
-  font-family: "Bebas Neue", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 @media (min-width: 700px) {
   .presentacion p {
     font-size: 5rem;
@@ -502,7 +495,6 @@ h1, h2 {
 h3, h4, .redes p {
   font-size: 1.5rem;
   text-shadow: 0 0 7px #353535;
-  padding: 0.4rem 0;
 }
 
 h3 {
@@ -512,6 +504,61 @@ h3 {
   margin: 0;
 }
 
+.presentacion {
+  height: 30%;
+  min-height: 150px;
+  max-height: 300px;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../media/Backgrounds/sombrero.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  font-size: 4rem;
+  margin: 0;
+  color: white;
+  text-shadow: 0 0 10px #ff7040;
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.presentacion span {
+  margin-left: 10px;
+  display: flex;
+  padding: 0 10px;
+  border: 5px solid white;
+  animation: presentacion 1.5s forwards;
+}
+
+@keyframes presentacion {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 0 0;
+    opacity: 1;
+    background-color: white;
+    text-shadow: none;
+  }
+  45% {
+    border-radius: 0px;
+  }
+  60% {
+    transform: scaleX(1);
+    transform-origin: 0 0;
+    opacity: 1;
+    background-color: white;
+    text-shadow: none;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 0 0;
+    opacity: 1;
+    border-radius: 25px;
+    text-shadow: 0 0 10px #40cfff;
+  }
+}
 .form-email {
   max-width: 420px;
   margin: 50px auto;

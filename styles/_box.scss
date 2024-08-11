@@ -48,27 +48,25 @@
 /* Link-A */
 
 .link-A {
-  display:flex;
+  display:inline-flex;
   width: auto;
-  margin-left: auto;
   font-size: 0.9rem;
+  border-radius: 0.3rem;
+  margin-bottom: 5px;
+  padding: 5px;
+  color: $colorJet;
+  text-decoration: none;
+  @include playwrite-ar(400);
   i{
     align-self: center;
   }
-  a{
-    border-radius: 1rem;
-    padding: 0.2rem;
-    color: $colorJet;
-    text-decoration: none;
-    @include playwrite-ar(400);
-    &:hover {
-      background-color: $colorNaranja;
-      color: white;
-      transition: 0.2s;
-    }
+  &:hover {
+    background: $colorNaranja;
+    color: white;
+    transition: 0.2s;
+
   }
 }
-
 .list-unstyled{
   li{
     margin: 0.2rem 0;
@@ -116,6 +114,9 @@
     text-decoration: none;
     border-radius: 100%;
     margin: 0 1rem;
+    &:hover{
+      animation: animationRedes 0.6s forwards;
+    }
   }
   i{
     font-size: 1.5rem;
@@ -130,6 +131,23 @@
     line-height: 1.5;
     display: flex;
     word-break:break-all;
+  }
+}
+
+@keyframes animationRedes {
+  50%{
+    rotate: 360deg;
+  }
+  75%{
+    scale: 1.2;
+    rotate: 360deg;
+
+  }
+  100%{
+    scale: 1.1;
+    rotate: 360deg;
+    background-color: white;
+    box-shadow: 0 0 20px white;
   }
 }
 
@@ -192,7 +210,7 @@
   position: relative;
   z-index: 0;
   border-radius: 20px;
-  max-height: 300px;
+  max-height: 500px;
   img{
     object-fit: cover;
   }

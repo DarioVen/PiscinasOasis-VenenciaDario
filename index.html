@@ -20,13 +20,13 @@
         <p class="m-0 text-white"><i class="bi bi-telephone headerIcon"></i>+54 9 555-0134</p>
       </div>
       <div class="d-flex p-2">
-        <a href="https://www.instagram.com"><i class="bi bi-instagram headerIcon"></i>
+        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram headerIcon"></i>
         </a>
-        <a href="https://www.whatsapp.com"><i class="bi bi-whatsapp headerIcon"></i>
+        <a href="https://www.whatsapp.com" target="_blank"><i class="bi bi-whatsapp headerIcon"></i>
         </a>
-        <a href="https://es-la.facebook.com"><i class="bi bi-facebook headerIcon"></i> 
+        <a href="https://es-la.facebook.com" target="_blank"><i class="bi bi-facebook headerIcon"></i> 
         </a>
-        <a href="https://x.com/X"> <i class="bi-twitter-x headerIcon"></i>
+        <a href="https://x.com/X" target="_blank"> <i class="bi-twitter-x headerIcon"></i>
         </a>
       </div>
     </div>
@@ -34,13 +34,12 @@
   <main>
     <!-- PRESENTACIÓN -->
     <div class="container-fluid presentacion">
-      <div><p>Oasis</p></div>
-      <div><p>#Home</p></div>
+      Oasis<span>#Home</span>
     </div>
     
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-md bg-Jet sticky-top">
-      <div class="container-fluid col-lg-11 col-xl-10">
+      <div class="container-fluid col-lg-10 col-xl-9">
         <a class="navbar-brand py-0 d-flex" href="index.html"><img src="./media/Iconos/logoPiscinasOasis.svg" alt="Logo" height="50" class="logoPO"><span class="navbar-brand-text">PiscinasOasis</span></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span><i class="bi bi-list"></i></span>
@@ -67,16 +66,16 @@
       </div>
     </nav>
 <!-- Contenido -->
-  <div class="container-fluid col-lg-11 col-xl-10 container-Main">
+  <div class="container-fluid col-lg-10 col-xl-9 container-Main">
 <!-- h1 -->
       <div class="row">
           <h1>PiscinasOasis</h1>
           <h3>Empresa dedicada a piscinas</h3>
           <div class="content-box-A">
-            <ul class="list-unstyled link-A d-flex flex-column">
-              <li><a href="#diseño-y-construcción">Diseño y Construncción</a></li>
-              <li><a href="#productos-y-servicios">Productos y Servicios</a></li>
-              <li><a href="#nosotros">Nosotros</a></li>
+            <ul class="list-unstyled flex-column">
+              <li><a class="link-A" href="#diseño-y-construcción">Diseño y Construncción</a></li>
+              <li><a class="link-A" href="#productos-y-servicios">Productos y Servicios</a></li>
+              <li><a class="link-A" href="#nosotros">Nosotros</a></li>
             </ul>
           </div>
       </div>
@@ -88,9 +87,9 @@
       <div class="row content-box-A">
         <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
           <p>En Piscinas Oasis lo hacemos posible. Diseñamos y construimos piscinas a medida, garantizando la máxima calidad y eficiencia. Desde la elección de los materiales hasta la instalación, te acompañamos en cada paso del proceso. Sumérgete en una experiencia refrescante y llena de confort.</p>
-          <button type="button" class="btn d-flex justify-content-end link-A">
-            <a href="./pages/piscinas.html">ir al sitio</a>
-          </button>
+          <div class="d-flex justify-content-end">
+            <a class="link-A" href="./pages/piscinas.html">ir al sitio</a>
+          </div>
         </div>
         <div class="col-12 col-md-6" id="carouselHome">
           <div id="carouselExampleRide" class="carousel slide" data-bs-ride="carousel">
@@ -138,9 +137,9 @@
           <p>Todo lo que tu piscina necesita para brillar. Contamos con una amplia gama de productos de alta calidad, incluyendo:</p>
         </div>
         <div>
-        <div class="col-12 col-md-6 d-flex link-A">
-          <a href="./pages/ProductosServicios.html#productoA" class="d-flex flex-column icono-A align-items-center w-100"><span >Equipos</span><img src="./media/Iconos/filtro.svg" alt="Equipos de filtración y depuración."></a>
-          <a href="./pages/ProductosServicios.html#productoQ" class="d-flex flex-column icono-A align-items-center w-100"><span>Quimicos</span><img src="./media/Iconos/Quimico.svg" alt="Químicos."></a>
+        <div class="col-12 col-md-6 d-flex">
+          <a href="./pages/ProductosServicios.html#productoA" class="d-flex flex-column icono-A align-items-center w-100 link-A"><span >Equipos</span><img src="./media/Iconos/filtro.svg" alt="Equipos de filtración y depuración."></a>
+          <a href="./pages/ProductosServicios.html#productoQ" class="d-flex flex-column icono-A align-items-center w-100 link-A"><span>Quimicos</span><img src="./media/Iconos/Quimico.svg" alt="Químicos."></a>
         </div>
       </div>
       </div>
@@ -154,9 +153,9 @@
           <p>Nuestro equipo de expertos se encarga del mantenimiento integral de tu piscina, garantizando agua cristalina y un funcionamiento óptimo. Realizamos limpieza profunda, reparación de filtración, regulación de químicos y todo lo necesario para que disfrutes al máximo de tu oasis personal.</p>
         </div>
         <div>
-      <div class="col-12 col-md-6 d-flex link-A" >
-        <a href="./pages/ProductosServicios.html#servicioT" class="d-flex flex-column align-items-center justify-content-center icono-A w-100 "><span>Reparaciones</span><img src="./media/Iconos/piscinareparar.svg" alt="Servicio Tecnico"></a>
-        <a href="./pages/ProductosServicios.html#servicioL" class="d-flex flex-column align-items-center justify-content-center icono-A w-100 "><span>Limpieza</span><img src="./media/Iconos/piscinalimpiar.svg" alt="Servicio de Limpieza"></a>
+      <div class="col-12 col-md-6 d-flex" >
+        <a href="./pages/ProductosServicios.html#servicioT" class="d-flex flex-column align-items-center justify-content-center icono-A w-100 link-A"><span>Reparaciones</span><img src="./media/Iconos/piscinareparar.svg" alt="Servicio Tecnico"></a>
+        <a href="./pages/ProductosServicios.html#servicioL" class="d-flex flex-column align-items-center justify-content-center icono-A w-100 link-A"><span>Limpieza</span><img src="./media/Iconos/piscinalimpiar.svg" alt="Servicio de Limpieza"></a>
       </div>
       </div>
     </div>
@@ -168,9 +167,9 @@
       <div class="row content-box-A">
         <div class="col-12 col-md-6 d-flex flex-column justify-content-between">
           <p>PiscinasOasis nace con el sueño de llevar la diversión y el relax del agua a cada hogar. Somos una empresa con más de 15 años de experiencia en el sector, y estamos comprometidos a ofrecer a nuestros clientes:</p>
-          <button type="button" class="btn d-flex justify-content-end link-A">
-            <a href="./pages/Nosotros.html">ir al sitio</a>
-          </button>
+          <div class="d-flex justify-content-end">
+            <a class="link-A" href="./pages/Nosotros.html">ir al sitio</a>
+          </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="accordion accordion-flush">
@@ -223,13 +222,13 @@
   <footer> 
     <div class="d-flex justify-content-around align-content-center p-1 bg-Jet">
         <div class="d-flex">
-        <a href="https://www.instagram.com"><i class="bi bi-instagram headerIcon"></i>
+        <a href="https://www.instagram.com" target="_blank"><i class="bi bi-instagram headerIcon"></i>
         </a>
-        <a href="https://www.whatsapp.com"><i class="bi bi-whatsapp headerIcon"></i>
+        <a href="https://www.whatsapp.com" target="_blank"><i class="bi bi-whatsapp headerIcon"></i>
         </a>
-        <a href="https://es-la.facebook.com"><i class="bi bi-facebook headerIcon"></i> 
+        <a href="https://es-la.facebook.com" target="_blank"><i class="bi bi-facebook headerIcon"></i> 
         </a>
-        <a href="https://x.com/X"> <i class="bi-twitter-x headerIcon"></i>
+        <a href="https://x.com/X" target="_blank"> <i class="bi-twitter-x headerIcon"></i>
         </a>
       </div>
       <div class="d-flex">

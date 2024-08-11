@@ -18,16 +18,15 @@
 }
 
 .navbar-toggler:focus{
-  box-shadow: 0 0 0 1px
+  box-shadow: 0 0 10px 0 white ;
 }
-
 
 .nav-item {
   display: flex;
   margin-right: 1rem;
   border-bottom: 1px solid white;
-}
 
+}
 .nav-item :hover{
   scale: 1.1;
   transition: scale 0.2s, transform 0.2s;
@@ -40,7 +39,7 @@
     margin-right: auto;
   }
   .nav-item :hover{
-    transform: translateX(5px);
+    transform: translateX(10px);
   }
 }
 
